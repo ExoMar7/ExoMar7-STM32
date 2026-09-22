@@ -15,7 +15,11 @@ If any of those install directories is different, they can be changed in the jus
 > In order to get autocompletion working on Zephyr items it is required to build the project at least once.
 
 # Building
-Run the following command:
+Install the rust target required for building for the STM32H562RGT6 by running:
+```bash
+rustup target install thumbv8m.main-none-eabi
+```
+Then run the following command to build the project:
 ```bash
 just build
 ```
