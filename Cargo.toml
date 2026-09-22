@@ -1,0 +1,18 @@
+[package]
+# DO NOT CHANGE NAME
+name = "rustapp"
+version = "0.1.0"
+edition = "2021"
+description = "Source code for the WeAct STM32H562 Core board used in the ExoMar7 robot."
+license = "AGPL-3.0-only"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+zephyr = "0.1.0"
+log = "0.4.22"
+micropb = "0.6.0"
+
+[build-dependencies]
+zephyr-build = "0.1.0"
